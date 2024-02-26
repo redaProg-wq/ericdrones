@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Eric Drones</title>
+    <title>ES Drones 83</title>
 
     <!--Bootstrap -->
     <link
@@ -43,11 +43,11 @@
       <div class="header-proposition-value-container">
         <!-- header sur ordi-->
         <header>
-          <h2>ES Drones</h2>
+          <h2>ES Drones 83</h2>
           <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos offres</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </header>
 
@@ -61,16 +61,16 @@
         <div class="div-menu-mobile">
           <ul>
             <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#presentation">Services</a></li>
-            <li><a href="#voir-ecouter">Contacts</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </div>
 
         <!-- fin de la partie header mobile -->
 
-        <div class="proposition-value">
+        <div class="proposition-value" id="accueil">
           <div class="local-container proposition-value-container">
-            <h1>Eric S. Drones</h1>
+            <h1>ES Drones 83</h1>
 
             <p>Pilote de Drones dans le var</p>
           </div>
@@ -78,7 +78,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="local-container container-fluid services-container">
             <h2>Services</h2>
 
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" >
         <div class="local-container">
             <div class="experience-content">
                 <div class="experience-content-img">
@@ -135,5 +135,80 @@
         </div>
 
     </section>
+
+    <section class="form container-fluid" id="contacts">
+      <div class="local-container">
+        <p class="local-container"> N'hesitez pas à nous envoyer un mail via ce formulaire, ou à nous contacter via nos informations de contacts, que vous retrouverez en pieds de page. <br>
+        Nous ne conservons pas vos informations les informations envoyées, ne les divulguerons pas à un tiers. </p>
+        <form action="" method="" class="mon-formulaire" id="monFormulaire">
+          <div class="mb-3">
+            <label class="form-label">Nom :</label>
+            <input type="name" class="form-control" id="nom" />
+            <div class="error invisible">
+              Veuillez entrer une valeur comprise entre 2 et 20 carcatères
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Votre mail :</label>
+            <input type="email" class="form-control" id="mail" />
+            <div class="error invisible">Erreur : Email invalide</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Numéro de contact - optionnel :</label>
+            <input type="phone" class="form-control" id="numero" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Votre Message :</label>
+            <input type="text" class="form-control" id="message" />
+            <div class="error invisible">
+              Veuillez saisir un message compris entre minimum 5 et maximum
+              100 caractères
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" id="labelCaptcha"></label>
+            <input type="number" class="form-control" id="captcha" />
+            <div class="error invisible">
+              Erreur : la saisie du captcha n'est pas correcte
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark">Envoyer</button>
+        </form>
+      </div>
+
+      <div class=" local-container div-paragraphe-validation-contacts">
+        <p
+          class=" paragraphe-contacts-invisible"
+        >
+          Message envoyé ! <br />
+        </p>
+        <p
+          class="paragraphe-validation-contacts paragraphe-contacts-invisible2"
+        >
+          Nous vous recontacterons sous peu ! <br />
+          <br />
+          N'hesitez pas non plus à nous contacter par téléphone, aux coordonées
+          indiquées au pied de page. <br />
+          <br />
+          Merci et @ bientot !
+        </p>
+      </div>
+
+      </div>
+    </section>
+
+    <footer class="footer ">
+      <div class="container-fluid local-container">
+        <div class="separator"></div>
+        <p class="local-container text-center"> ES Drones 83 <br>
+        06 08 80 76 92 <br>
+        esdrone83@gmail.com <br>
+      Auto-entreprise enregistrée et active dans le var</p>
+      </div>
+      
+    </footer>
   </body>
 </html>
